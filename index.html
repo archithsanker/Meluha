@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Meluha Lounge | Premium Event Space in Pantheerankavu, Calicut</title>
+    <meta name="description" content="Meluha Lounge is a premier heritage-inspired event space in Pantheerankavu, Calicut. Perfect for intimate weddings, family gatherings, and private celebrations.">
+    <link rel="canonical" href="https://meluhalounge.in/">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://meluhalounge.in/">
+    <meta property="og:title" content="Meluha Lounge | Event Space in Pantheerankavu, Calicut">
+    <meta property="og:description" content="Discover Meluha Lounge, a heritage-inspired destination overlooking Calicut's timeless landscape. Book for weddings and private events.">
+    <meta property="og:image" content="https://meluhalounge.in/images/hero.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>MELUHA LOUNGE</h1>
+            <p class="tagline">Spaces Shaped for Celebration</p>
+            <p>A heritage-inspired event venue overlooking Kerala's timeless landscape.</p>
+            <a href="#availability" class="btn">Check Availability</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="story">
+            <article>
+                <h2>A Premium Event Space in Pantheerankavu, Calicut</h2>
+                <p>
+                    Nestled among palms and paddy fields, Meluha Lounge offers a refined heritage setting for 
+                    intimate celebrations, family gatherings, corporate retreats, and memorable weddings in Kozhikode.
+                </p>
+            </article>
+            <img src="images/story.jpg" alt="Meluha Lounge event venue scenic view in Calicut">
+        </section>
+
+        <section aria-label="Gallery">
+            <h2>Our Event Gallery</h2>
+            <div class="gallery">
+                <img src="images/hero.jpg" alt="Meluha Lounge main celebration lawn">
+                <img src="images/story.jpg" alt="Beautiful outdoor seating area at Meluha Lounge">
+                <img src="images/gallery1.jpg" alt="Intimate wedding setup at Meluha Lounge Calicut">
+            </div>
+        </section>
+
+        <section id="availability">
+            <h2>Check Venue Availability</h2>
+            <div id="calendar"></div>
+        </section>
+
+        <section id="bookingForm">
+            <h2>Enquire on WhatsApp</h2>
+            <p id="selectedDate">Select an available date from the calendar above</p>
+            
+            <form>
+                <label for="name" class="visually-hidden">Name</label>
+                <input id="name" placeholder="Name" required type="text">
+
+                <label for="phone" class="visually-hidden">Phone Number</label>
+                <input id="phone" placeholder="Phone Number" required type="tel">
+
+                <label for="eventType" class="visually-hidden">Event Type</label>
+                <select id="eventType">
+                    <option>Family Gathering</option>
+                    <option>Intimate Wedding</option>
+                    <option>Corporate Retreat</option>
+                    <option>Private Celebration</option>
+                </select>
+
+                <label for="guests" class="visually-hidden">Number of Guests</label>
+                <input id="guests" placeholder="Number of Guests" type="number">
+
+                <button type="button" onclick="sendWhatsApp()">Enquire on WhatsApp</button>
+            </form>
+        </section>
+
+        <section id="location">
+    <h2>Find Us</h2>
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3913.4355523178076!2d75.8340156!3d11.2292837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba65bc93cf1114b%3A0xe6bfb4cce8f01b0f!2sMeluha%20Lounge!5e0!3m2!1sen!2sin!4v1717080000000!5m2!1sen!2sin" 
+            width="100%" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Meluha Lounge Location Map">
+        </iframe>
+    </div>
+        </section>
+    </main>
+
+    <footer>
+        <p><strong>Meluha Lounge</strong></p>
+        <p>Pantheerankavu, Kozhikode, Kerala</p>
+        <p>Phone: <a href="tel:+919037421985">9037421985</a></p>
+        <p>Email: <a href="mailto:archithsanker@gmail.com">archithsanker@gmail.com</a></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

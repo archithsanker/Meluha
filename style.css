@@ -1,0 +1,141 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Inter,sans-serif;
+    background:#faf8f5;
+    color:#222;
+}
+
+.hero{
+    height:100vh;
+    background: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)), url('images/hero.jpg');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+.hero-content{
+    color:white;
+}
+
+.hero h1{
+    font-size:90px;
+    letter-spacing:8px;
+    font-family:'Cormorant Garamond',serif;
+}
+
+.tagline{
+    margin-top:20px;
+    font-size:22px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:40px;
+    background:#b79a67;
+    color:white;
+    text-decoration:none;
+    padding:15px 35px;
+}
+
+section{
+    max-width:1200px;
+    margin:auto;
+    padding:100px 30px;
+}
+
+h2{
+    font-family:'Cormorant Garamond',serif;
+    font-size:48px;
+    margin-bottom:30px;
+}
+
+.story{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.story img{
+    width:100%;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    height:450px;
+    object-fit:cover;
+}
+
+#calendar{
+    margin-top:40px;
+}
+
+form{
+    margin-top:40px;
+    display:grid;
+    gap:15px;
+}
+
+input,
+select{
+    padding:15px;
+    font-family:inherit;
+}
+
+button{
+    background:#b79a67;
+    color:white;
+    border:none;
+    padding:15px;
+    cursor:pointer;
+    font-weight: 500;
+}
+
+footer{
+    text-align:center;
+    padding:60px;
+    background: #f1ede7;
+}
+
+footer a {
+    color: #222;
+    text-decoration: none;
+}
+
+/* Accessibility class for hidden form labels */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+@media(max-width:900px){
+    .hero h1{
+        font-size:48px;
+    }
+    .story{
+        grid-template-columns:1fr;
+    }
+    .gallery{
+        grid-template-columns:1fr;
+    }
+}
